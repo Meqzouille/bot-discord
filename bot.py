@@ -1,6 +1,5 @@
 import discord
-
-
+import os
 
 SALON_LOGS_ID = 1498890074601951282
 SALON_RECAP_ID = 1499222076693676193
@@ -30,5 +29,4 @@ async def on_message(message):
             channel = client.get_channel(SALON_RECAP_ID)
             await channel.send(embed=embed)
 
-import os
 client.run(os.getenv("TOKEN"))
